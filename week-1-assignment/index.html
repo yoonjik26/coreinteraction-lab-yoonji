@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+<head>
+	Demo
+<title>Demo Page</title>
+<style>
+	 div {
+	color: red;
+	background-color: green;
+}
+.first-div {
+background-color: blue;
+}
+.first-div:hover {
+background-color: purple;
+}
+.first-div:active {
+padding: 30px;
+}
+.sec-div {
+padding: 20px;
+}
+.really-tall {
+background-color: red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="first-div">
+Hi
+</div>
+
+<div class="second-div">
+Hello
+</div>
+
+</body> 
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+
+$('.first-div').click(function() {
+$('.first-div').toggleClass('really-tall')
+});
+
+</script>
+
