@@ -1,52 +1,84 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
 <head>
-	Demo
-<title>Demo Page</title>
+<title>The Purple of Westeria</title>
 <style>
-	 div {
-	color: red;
-	background-color: green;
+body {
+	height: 700px;
+    background: linear-gradient(#483D8B, #B0E0E6);
 }
-.first-div {
-background-color: blue;
+.first {
+	margin-top: 150px;
 }
-.first-div:hover {
-background-color: purple;
+.second:hover {
+	color: #E6E6FA;
+	font-family: "Zapfino";
 }
-.first-div:active {
-padding: 30px;
+.tall {
+	background: #AB82FF;
+	padding: 20px;
+	font-size: 20px;
+	font-family: "Zapfino";
 }
-.sec-div {
-padding: 20px;
+.taller {
+	background: #8968CD;
+	padding: 40px;
+	font-size: 35px;
+	font-family: "Zapfino";
 }
-.really-tall {
-background-color: red;
+.wisteria {
+	font-family: "Zapfino";
+	color: #E6E6FA;
+}
+.purple {
+	background: #5D478B;
+	padding: 60px;
+	font-family: "Zapfino";
+	font-size: 45px;
 }
 
+p {
+    color: #F5FFFA;
+    text-align: center;
+    font-family: "Andale Mono";
+	font-size: 30px;
+	line-height: 20px;
+}
 </style>
-
 </head>
-
 <body>
 
-<div class="first-div">
-Hi
-</div>
 
-<div class="second-div">
-Hello
-</div>
+<p class="first">The purple of</p>
+<p class="second">wisteria</P>
+<p>that moves like waves,</P>
+<p>if made into a painting,</p>
+<p>would have to be a</p>
+<p class="third">deep</p>
+<p class="fourth">deep</p>
+<p class="fifth">purple</p>
 
-</body> 
+</body>
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 <script>
 
-$('.first-div').click(function() {
-$('.first-div').toggleClass('really-tall')
+$('.second').click(function() {
+$(this).toggleClass('wisteria')
+});
+$('.third').click(function() {
+$(this).toggleClass('tall')
+});
+$('.fourth').click(function() {
+$(this).toggleClass('taller')
+});
+$('.fifth').click(function() {
+$(this).toggleClass('purple')
 });
 
+
 </script>
+
+</html>
+
 
