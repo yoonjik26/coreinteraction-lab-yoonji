@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Peony of Scarlet Red</title>
+<style>
+body {
+	height: 700px;
+    background: #FFFFFF;
+}
+.first {
+	margin-top: 50px;
+	color: white;
+	padding: 20px;
+	background-color: black;
+	margin-left: 330px;
+	width: 310px;
+    height: 30px;
+}
+.second {
+	color: white;
+	padding: 20px;
+	background-color: black;
+	margin-left: 345px;
+	width: 280px;
+    height: 30px;
+}
+.third {
+	color: white;
+	padding: 20px;
+	background-color: black;
+	margin-left: 360px;
+	width: 240px;
+    height: 30px;
+}
+.fourth:hover {
+	color: white;
+	padding: 20px;
+	background-color: #EE30A7;
+	margin-left: 375px;
+	width: 190px;
+    height: 30px;
+    font-family: "Snell Roundhand";
+}
+.scarlet-red {
+	font-family: "Snell Roundhand";
+	color: #EE30A7;
+	font-size: 40px;
+    padding-top: 10px;
+    padding: 10px;
+    animation-name: colorful;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful{
+    0%   {color: #FFFAFA;}
+    25%  {color: #FFE4E1;}
+    50%  {color: #FF34B3;}
+    100% {color: #EE30A7;}
+}
+
+.fifth {
+	color: white;
+	padding: 20px;
+	background-color: black;
+	margin-left: 345px;
+	width: 270px;
+    height: 30px;
+}
+.sixth {
+	color: white;
+	padding: 20px;
+	background-color: black;
+	margin-left: 335px;
+	width: 290px;
+    height: 30px;
+}
+.seventh:hover {
+	color: #00CED1;
+	font-family: "Snell Roundhand";
+	font-size: 40px;
+}
+.dreaming {
+	color: #00CED1;
+	font-family: "Snell Roundhand";
+	font-size: 40px;
+	animation-name: stretch;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes stretch {
+	0% {font: 30px "Snell Roundhand";}
+    25% {font: 50px "Snell Roundhand";}
+    50% {font: 60px "Snell Roundhand";}
+    100% {font: 70px "Snell Roundhand";}
+}
+p {
+    color: black;
+    text-align: center;
+    font-family: "Didot";
+	font-size: 40px;
+	line-height: 20px;
+}
+</style>
+</head>
+<body>
+
+<p class="first">How like a lovely</p>
+<p class="second">young girl it is,</P>
+<p class="third">this peony of</P>
+<p class="fourth">scarlet red</p>
+<p class="fifth">whose shadow</p>
+<p class="sixth">shades my fitful</p>
+<p class="seventh">dreaming</p>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+
+$('.fourth').click(function() {
+$(this).toggleClass('scarlet-red')
+});
+$('.seventh').click(function() {
+$(this).toggleClass('dreaming')
+});
+
+</script>
+
+</html>
