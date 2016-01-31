@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Pine Needles</title>
+<style>
+body {
+	height: 700px;
+    background: linear-gradient(#F5F5F5, #9C9C9C);
+}
+.first {
+	margin-top: 150px;
+}
+.second:hover {
+	color: #458B74;
+	font-family: "Avenir next";
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 40px;
+	text-shadow: -2px 0 #8B8378, 0 2px #8B8378, 2px 0 #8B8378, 0 -2px #8B8378;
+}
+.third:hover {
+	color: #8B8378;
+	font-family: "Birch Std";
+	font-weight: lighter;
+	font-size: 50px;
+	text-shadow: -2px 0 #C1CDCD, 0 2px #C1CDCD, 2px 0 #C1CDCD, 0 -2px #C1CDCD;
+}
+.fifth:hover {
+	color: #555555;
+	font-size: 40px;
+	font-family: "Avenir next";
+}
+.fourth:hover {
+	font-family: "Copperplate";
+	font-size: 35px;
+	color: #F5FFFA;
+	border-radius: 30px;
+	border-style: dotted;
+    border-width: 5px;
+    width: 300px;
+    padding: 10px;
+    margin-left: 335px;
+}
+.scatter {
+	color: #555555;
+	font-size: 40px;
+	font-family: "Avenir next";
+	letter-spacing: 30px;
+}
+
+p {
+    color: #F5FFFA;
+    text-align: center;
+    font-family: "Savoye LET";
+	font-size: 50px;
+	line-height: 20px;
+    text-shadow: 1px 1px 2px #7A7A7A, 0 0 25px #A1A1A1, 0 0 5px #303030;
+}
+</style>
+</head>
+<body>
+
+<p class="first">The tips of</p>
+<p class="second">the pine needles</P>
+<p class="third">so thin...</P>
+<p>no sooner does</p>
+<p>the dew collect than</p>
+<p class="fourth">white pearls</p>
+<p class="fifth">scatter</p>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+
+$('.fourth').click(function() {
+$(this).toggleClass('white-pearls')
+});
+$('.fifth').click(function() {
+$(this).toggleClass('scatter')
+});
+
+</script>
+
+</html>
+
+
