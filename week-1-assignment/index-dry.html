@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Pine Needles</title>
+<style>
+body {
+	height: 700px;
+    background: #EED8AE;
+}
+.first {
+	margin-top: 150px;
+}
+.second:hover {
+	color: #458B74;
+	font-family: "Avenir next";
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 40px;
+	text-shadow: -2px 0 #8B8378, 0 2px #8B8378, 2px 0 #8B8378, 0 -2px #8B8378;
+}
+.fifth:hover {
+	color: #555555;
+	font-size: 40px;
+	font-family: "Avenir next";
+	text-decoration: underline;
+}
+.fourth:hover {
+	font-family: "Charter";
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px #CDBA96, 0 0 5px #8B7E66;
+    font-size: 30px;
+}
+.white-pearls {
+	font-family: "Charter";
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px #CDBA96, 0 0 5px #8B7E66;
+	font-size: 30px;
+	width: 230px;
+    height: 30px;
+    border-radius: 25px;
+    padding-top: 10px;
+    margin-left: 370px;
+    padding: 10px;
+    animation-name: colorful;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.scatter {
+	font-size: 40px;
+	font-family: "Avenir next";
+	letter-spacing: 30px;
+	text-decoration: underline;
+}
+
+@keyframes colorful{
+    0%   {background-color: #FFFAFA;}
+    25%  {background-color: #FFFAFA;}
+    50%  {background-color: #EEE9E9;}
+    100% {background-color: #CDC9C9;}
+}
+
+p {
+    color: #8B7E66;
+    text-align: center;
+    font-family: "Savoye LET";
+    font-weight: lighter;
+	font-size: 50px;
+	line-height: 20px;
+}
+</style>
+</head>
+<body>
+
+<p class="first">The tips of</p>
+<p class="second">the pine needles</P>
+<p class="third">so thin...</P>
+<p>no sooner does</p>
+<p>the dew collect than</p>
+<p class="fourth">white pearls</p>
+<p class="fifth">scatter</p>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+
+$('.fourth').click(function() {
+$(this).toggleClass('white-pearls')
+});
+$('.fifth').click(function() {
+$(this).toggleClass('scatter')
+});
+
+</script>
+
+</html>
+
+
