@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ancient</title>
+<style>
+body {
+	height: 700px;
+    background: linear-gradient(#838B8B, #E0EEEE);;
+}
+.first {
+	margin-top: 150px;
+}
+.second:hover {
+	color: #CD1076;
+}
+.scarlet-red {
+	color: #CD1076;
+	font-size: 40px;
+    animation-name: move;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    0%   {margin-left: 0px;}
+    25%  {margin-left: 40px;}
+    50%  {margin-left: 40px;}
+    100% {margin-left: 0px;}
+}
+.third:hover {
+	color: #483D8B;
+	font-size: 40px;
+}
+.dreaming {
+	color: #00CED1;
+	animation-name: roll;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes roll {
+	0% {color: #F0FFFF;}
+    25% {color: #1E90FF;}
+    50% {color: #1874CD;}
+    100% {color: #104E8B;}
+}
+p {
+    color: #E0EEEE;
+    text-align: center;
+    font-family: "Trajan Pro 3";
+    text-shadow: 1px 1px 2px black, 0 0 25px #838B8B, 0 0 5px black;
+	font-size: 40px;
+	line-height: 20px;
+}
+</style>
+</head>
+<body>
+
+<p class="first">How like a lovely</p>
+<p>young girl it is,</P>
+<p>this peony of</P>
+<p class="second">scarlet red</p>
+<p>whose shadow</p>
+<p>shades my fitful</p>
+<p class="third">dreaming</p>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>
+
+$('.second').click(function() {
+$(this).toggleClass('scarlet-red')
+});
+$('.third').click(function() {
+$(this).toggleClass('dreaming')
+});
+
+</script>
+
+</html>
