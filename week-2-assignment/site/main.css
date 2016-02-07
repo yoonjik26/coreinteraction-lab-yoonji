@@ -1,0 +1,80 @@
+body {
+	background: white;
+	font-family: "Futura";
+	text-align: center;
+}
+
+.header {
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 60px;
+	font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.quote {
+	color: black;
+	margin: 30px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	font-size: 40px;
+}
+
+.blink {
+	animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+	0% {color: white;}
+    25% {color: black;}
+    50% {color: white;}
+    100% {color: black;}
+}
+
+.author {
+	color: black;
+	font-size: 25px;
+	text-align: right;
+	padding-bottom: 60px;
+	margin-right: 100px;
+	font-style: oblique;
+}
+
+.class-name {
+	color: black;
+	font-size: 10px;
+	margin-top: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+	border-top: 1px solid #BBBBBB;
+	padding-top: 10px;
+	text-align: center;
+}
+

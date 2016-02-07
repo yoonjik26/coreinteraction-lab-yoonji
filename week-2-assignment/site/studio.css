@@ -1,0 +1,64 @@
+body {
+	background: white;
+	font-family: "Futura";
+	text-align: center;
+}
+
+.header {
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 60px;
+	font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    overflow: hidden;
+    background-color: white;
+    border-bottom: 1px solid #BBBBBB;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.assignment {
+    text-align: left;
+    margin-top: 60px; 
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+.link {
+    margin-left: 60px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+
+.class-name {
+	color: black;
+	font-size: 10px;
+	margin-top: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+	border-top: 1px solid #BBBBBB;
+	padding-top: 10px;
+	text-align: center;
+}
+

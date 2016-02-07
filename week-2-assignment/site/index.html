@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Yoonji Kim</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="header">
+    Yoonji Kim
+  </div>
+
+  <ul>
+    <li><a class="active" href="contact.html">Contact</a></li>
+    <li><a class="active" href="lab.html">Lab</a></li>
+    <li><a class="active" href="studio.html">Studio</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
+  </ul>
+
+  <div class="quote">
+    <div class="first-line">Minimalism is</div>
+    <div>not a lack of something.</div>
+    <div>It's simply the perfect</div>
+    <div>amount of something.</div>
+  </div>
+
+  <div class="author">
+    <div>- Nicholas Burroughs</div>
+  </div>
+
+  <div class="class-name">
+    <div>Core Interaction Studio & Lab Spring 2016</div>
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script>
+$('.quote').click(function() {
+$(this).toggleClass('blink')
+});
+</script>
