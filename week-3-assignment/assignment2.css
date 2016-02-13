@@ -1,0 +1,46 @@
+.block {
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #8B544F;
+  left: 170px;
+}
+
+.first {
+  left: 20px;
+  margin-top: 10px;
+}
+
+.fourth {
+  top: 170px;
+  left: -340px;
+}
+
+.dot {
+  position: absolute;
+  background: #8A6FB1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.middle-left {
+  top: 60px;
+  left: 5px;
+}
+
+.bottom-right {
+  right: 5px;
+  bottom: 5px;
+}
+
+.middle {
+  top: 60px;
+  left: 60px;
+}
+
+.top-right {
+  top: 5px;
+  right: 5px;
+}

@@ -1,0 +1,30 @@
+div {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.first-rectangle {
+  background: #45B2E5;
+}
+
+.second-rectangle {
+  background: #69C28D;
+  top: -140px;
+  left: 10px;
+}
+
+.third-rectangle {
+  background: #00907A;
+  top: -280px;
+  left: 20px;
+}
+
+.circle {
+  background: #45B2E5;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  top: -420px;
+  left: 30px;
+}

@@ -1,0 +1,49 @@
+.top-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: #E8A39F;
+}
+
+.top-right {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: #F4BCD6;
+}
+
+.bottom {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #4B7FE8;
+}
+
+.square {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  top: 65px;
+  background: #FED100;
+}
+
+.dot {
+  position: relative;
+  margin-top: 150px;
+  left: 35%;
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+  background: #FED100;
+  border-radius: 50%;
+}
+
+
+

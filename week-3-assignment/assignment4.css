@@ -1,0 +1,64 @@
+.blue {
+  display: block;
+ 	position: relative;
+ 	width: 200px;
+ 	height: 350px;
+  background: #5356A5;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.green {
+	position: absolute;
+	left: 110px;
+	top: 15px;
+ 	width: 200px;
+ 	height: 335px;
+  background: #69C28D;
+  z-index: 3;
+}
+
+.yellow {
+  position: relative;
+ 	width: 165px;
+ 	height: 130px;
+  background: #FDD304;
+  left: 10px;
+	top: -360px;
+	padding: 7.5px;
+ 	z-index: 2;
+}
+
+.red {
+  position: relative;
+ 	width: 40px;
+ 	height: 40px;
+  background: #A94319;
+  margin-left: 50px;
+  z-index: 4;
+}
+
+.first-row.first {
+  left: -50px;
+}
+
+.first-row.second {
+	background: #FDD304;
+}
+
+.second-row.first {
+	top: 50px;
+	left: -150px;
+}
+
+.popped-up {
+  left: -50px;
+  top: -97.5px;
+}
+
+
+
+
+
+
+
