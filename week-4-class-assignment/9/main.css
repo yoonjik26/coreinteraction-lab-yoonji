@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+}
+.container {
+	position: fixed;
+	width: 90%;
+	height: 90%;
+	background: #4B7FE8;
+	margin-left: -45%;
+	margin-top: -25%;
+	left: 50%;
+	top: 50%;
+}

@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+.container {
+	position: fixed;
+	width: 200px;
+	height: 60px;
+	background: #4B7FE8;
+	right: 0;
+}
