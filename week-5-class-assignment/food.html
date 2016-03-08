@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+ 	<link rel="stylesheet" href="food.css">
+
+<body>
+
+  <div class="menu">
+    <div class="title">Zim&Zou</div>
+      <ul>
+        <li><a class="active" href="about.html">About</a></li> 
+        <li><a class="active" href="index.html">Home</a></li>
+      </ul>
+  </div>
+
+  <div class="gallery">
+    <div class="title-image">
+      <img src="food.jpg" id="Image"alt="gallery" width="650" height="550">
+      <form>
+      <input type="range" id="Filter" min="0" max="10" onchange="ChangeFilter()" />
+    </form>
+    <div class="name">The Future of Food</div>
+
+	<div class="outer-container">
+    <div class="flex-container">
+ 		<div class="image">
+ 			<img src="food-one.jpg" alt="gallery" width="320" height="320">
+ 		</div>
+  		<div class="image">
+ 			<img src="food-two.jpg" alt="gallery" width="320" height="320">
+ 		</div>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script>
+
+function ChangeFilter(event) {
+    Image = document.getElementById("Image");
+    Filter = document.getElementById("Filter").value;
+    
+    Image.style.WebkitFilter = "grayscale(" + Filter * 10 + "%)"
+}
+</script>
+
+</html>
+
