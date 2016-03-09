@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+ 	<link rel="stylesheet" href="jungle.css">
+
+<body>
+
+  <div class="menu">
+    <div class="title">Zim&Zou</div>
+      <ul>
+        <li><a class="active" href="about.html">About</a></li> 
+        <li><a class="active" href="index.html">Home</a></li>
+      </ul>
+  </div>
+
+  <div class="gallery">
+    <div class="title-image">
+    <div class="name">The Eternal Jungle</div>
+    <div class="description">The installation displays the finest skills in paper-cut art and leatherwork. Remaining faithful to its original purity, the artists create intricate objects with the paper, a material both beautiful and versatile. The 'Monkey', 'Toucan', and 'Chameleon' are all handcrafted and brought to life with leather offcuts.</div>
+
+	<div class="outer-container">
+    <div class="flex-container">
+    <div class="image">
+      <img src="tiger.jpg" name="image-swap" alt="gallery" width="350" height="320">
+      <select name="jungle" id="jungle" onchange="setImage(this);">
+    <option value="tiger.jpg">Tiger</option>
+    <option value="monkey.jpg">Monkey</option>
+    <option value="bird.jpg">Toucan</option>
+    <option value="cameleon.jpg">Chameleon</option>
+      </select>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script>
+
+function setImage(select){
+  var image = document.getElementsByName("image-swap")[0];
+  image.src = select.options[select.selectedIndex].value;
+}
+
+</script>
+
+</html>
+

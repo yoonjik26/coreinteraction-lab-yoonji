@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+ 	<link rel="stylesheet" href="atlantis.css">
+
+<body>
+
+  <div class="menu">
+    <div class="title">Zim&Zou</div>
+      <ul>
+        <li><a class="active" href="about.html">About</a></li> 
+        <li><a class="active" href="index.html">Home</a></li>
+      </ul>
+  </div>
+
+  <div class="gallery">
+    <div class="title-image">
+    <div class="name">Atlantis</div>
+
+	<div class="outer-container">
+    <div class="flex-container">
+    <div class="image">
+      <img src="atlantis-one.jpg" id="img" alt="gallery" width="320" height="320">
+      <div id="slider">
+      <input id="slide" type="range" min="330" max="1200" step="30" value="330" onchange="console.log(this.value)" />
+ 		</div>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<script>
+
+$("#slide").on('change',function () {
+ var value = $(this).val();
+    $("#img").width(value);
+    $("#img").height(value);
+});
+ $('.btn').click(function() {
+    $("#slide").val(parseInt($("#slide").val())+30);  
+    $("#slide").trigger('change');
+});
+
+</script>
+
+</html>
+
